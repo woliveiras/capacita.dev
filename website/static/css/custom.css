@@ -1,0 +1,53 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+ 
+/* your custom css */
+
+.homeWrapper p {
+    max-width: 730px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.nav-footer .fbOpenSource {
+    display: inline-block;
+    margin: 5px;
+    width: auto;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #5E2A85
+}
+
+.nav-footer .sitemap {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-footer .sitemap div {
+    flex: 0
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
