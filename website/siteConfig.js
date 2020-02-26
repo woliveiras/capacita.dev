@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
@@ -28,7 +21,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'Capacita.dev',
-  organizationName: 'facebook',
+  organizationName: 'woliveiras',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -41,9 +34,7 @@ const siteConfig = {
   //   { blog: true, label: 'Blog' }
   // ],
 
-  headerLinks: [
-    { page: 'apoiar', label: 'Apoiar' }
-  ],
+  headerLinks: [],
 
   // If you have users set above, you add it here:
   users,
