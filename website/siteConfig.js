@@ -2,21 +2,21 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true
-  }
-]
+// const users = [
+//   {
+//     caption: 'User1',
+//     // You will need to prepend the image path with your baseUrl
+//     // if it is not '/', like: '/test-site/img/image.jpg'.
+//     image: '/img/undraw_open_source.svg',
+//     infoLink: 'https://www.facebook.com',
+//     pinned: true
+//   }
+// ]
 
 const siteConfig = {
   title: 'Capacita.dev', // Title for your website.
   tagline: 'Aprenda programação online de graça através de desafios práticos',
-  url: 'https://www.capacita.dev/', // Your website URL
+  url: 'https://www.capacita.dev', // Your website URL
   baseUrl: '/', // Base URL for your project */
 
   // Used for publishing and more
@@ -37,7 +37,7 @@ const siteConfig = {
   headerLinks: [],
 
   // If you have users set above, you add it here:
-  users,
+  // users,
 
   /* path to images for header/footer */
   headerIcon: 'img/favicon/favicon-96x96.png',

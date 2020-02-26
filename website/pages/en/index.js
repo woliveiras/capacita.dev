@@ -1,18 +1,18 @@
 const React = require('react')
 
-const CompLibrary = require('../../core/CompLibrary.js')
+// const CompLibrary = require('../../core/CompLibrary.js')
 
-const MarkdownBlock = CompLibrary.MarkdownBlock /* Used to read markdown */
-const Container = CompLibrary.Container
-const GridBlock = CompLibrary.GridBlock
+// const MarkdownBlock = CompLibrary.MarkdownBlock /* Used to read markdown */
+// const Container = CompLibrary.Container
+// const GridBlock = CompLibrary.GridBlock
 
 class HomeSplash extends React.Component {
   render () {
-    const { siteConfig, language = '' } = this.props
-    const { baseUrl, docsUrl } = siteConfig
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`
-    const langPart = `${language ? `${language}/` : ''}`
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`
+    const { siteConfig } = this.props
+    const { baseUrl } = siteConfig
+    // const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`
+    // const langPart = `${language ? `${language}/` : ''}`
+    // const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`
 
     const SplashContainer = props => (
       <div className='homeContainer'>
@@ -70,21 +70,21 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render () {
     const { config: siteConfig, language = '' } = this.props
-    const { baseUrl } = siteConfig
+    // const { baseUrl } = siteConfig
 
-    const Block = props => (
-      <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}
-      >
-        <GridBlock
-          align='center'
-          contents={props.children}
-          layout={props.layout}
-        />
-      </Container>
-    )
+    // const Block = props => (
+    //   <Container
+    //     padding={['bottom', 'top']}
+    //     id={props.id}
+    //     background={props.background}
+    //   >
+    //     <GridBlock
+    //       align='center'
+    //       contents={props.children}
+    //       layout={props.layout}
+    //     />
+    //   </Container>
+    // )
 
     // const FeatureCallout = () => (
     //   <div
