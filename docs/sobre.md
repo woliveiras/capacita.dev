@@ -65,8 +65,6 @@ A melhor maneira de se aprender é praticando. Você vai errar muito, nós sabem
 
 Se você quiser/puder colaborar com o Capacita, confira as maneiras de nos apoiar:
 
-- se envolva com a nossa mentoria
-- ajude no nosso fórum
-- compartilhe ou responda dúvidas no nosso chat
-- auxilie financeiramente
+- se envolva com a nossa mentoria (em breve abriremos o cadastramento)
+- [auxilie financeiramente](/apoiar)
 - compartilhe nas suas redes sociais
