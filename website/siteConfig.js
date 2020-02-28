@@ -6,10 +6,10 @@ const siteConfig = {
   projectName: 'capacita-dev',
   organizationName: 'woliveiras',
   headerLinks: [
-    // {
-    //   doc: 'sobre',
-    //   label: 'Como funciona'
-    // }
+    {
+      doc: 'sobre',
+      label: 'Como funciona'
+    }
   ],
   headerIcon: 'img/favicon/favicon-96x96.png',
   footerIcon: 'img/favicon/favicon-96x96.png',
