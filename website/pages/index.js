@@ -47,6 +47,7 @@ class HomeSplash extends React.Component {
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <p>Em breve um projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
           <PromoSection>
+            <Button href='/empresas'>Empresas</Button>
             <Button href='/apoiar'>Como ajudar</Button>
           </PromoSection>
         </div>
