@@ -5,7 +5,12 @@ const siteConfig = {
   baseUrl: '/',
   projectName: 'capacita-dev',
   organizationName: 'woliveiras',
-  headerLinks: [],
+  headerLinks: [
+    // {
+    //   doc: 'sobre',
+    //   label: 'Como funciona'
+    // }
+  ],
   headerIcon: 'img/favicon/favicon-96x96.png',
   footerIcon: 'img/favicon/favicon-96x96.png',
   favicon: 'img/favicon/favicon.ico',
