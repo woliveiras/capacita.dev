@@ -37,10 +37,17 @@ a {
     flex: 0
 }
 
+.project-title img {
+    max-width: 190px;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
 @media only screen and (min-width: 1024px) {
+    .project-title img {
+        max-width: 280px;
+    }    
 }
 
 @media only screen and (max-width: 1023px) {

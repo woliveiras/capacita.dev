@@ -14,9 +14,9 @@ class HomeSplash extends React.Component {
     )
 
     const ProjectTitle = props => (
-      <div>
+      <div className='project-title'>
         <img
-          src={`${baseUrl}img/logo/Capacita.dev-logo-320.png`}
+          src={`${baseUrl}img/logo/Capacita.dev-75.jpg`}
           alt='Logo do programa Capacita.dev. Letra C artístico com bordas arredondadas e sombreado no topo com a base fina e fechada com ponta. A cor do logo é roxo com gradiente de tonalidade mais escura.'
         />
         <h2 className='projectTitle'>

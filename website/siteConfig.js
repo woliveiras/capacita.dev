@@ -3,7 +3,7 @@ const siteConfig = {
   tagline: 'Aprenda programação online de graça através de desafios práticos',
   url: 'https://www.capacita.dev',
   baseUrl: '/',
-  projectName: 'capacita-dev',
+  projectName: 'Capacita.dev',
   organizationName: 'woliveiras',
   headerLinks: [
     {
