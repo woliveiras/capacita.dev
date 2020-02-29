@@ -33,7 +33,9 @@ const siteConfig = {
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
   repoUrl: 'https://github.com/woliveiras/capacita.dev',
-  twitterUsername: '@etc_william'
+  twitterUsername: '@etc_william',
+  enableUpdateBy: true,
+  gaTrackingId: 'G-88SB0NW2XL'
 }
 
 module.exports = siteConfig
