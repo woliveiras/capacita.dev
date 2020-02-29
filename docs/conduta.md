@@ -5,7 +5,8 @@ sidebar_label: Código de conduta
 description: Código de conduta do Capacita.dev
 ---
 
-Essas são as regras de conduta para que não aconteça nenhum transtorno por parte dos(as) envolvidos(as) no Capacita.dev
+Essas são as regras de conduta para que não aconteça nenhum transtorno por parte dos(as) envolvidos(as) no Capacita.dev.
+
 Não será tolerado nenhum tipo de repúdio, humilhação ou discriminação por:
 
 * Gênero, identidade de gênero ou expressão de gênero;
