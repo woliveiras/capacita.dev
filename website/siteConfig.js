@@ -3,9 +3,15 @@ const siteConfig = {
   tagline: 'Aprenda programação online de graça através de desafios práticos',
   url: 'https://www.capacita.dev',
   baseUrl: '/',
+  cleanUrl: true,
+  docsUrl: '',
   projectName: 'Capacita.dev',
   organizationName: 'woliveiras',
   headerLinks: [
+    // {
+    //   doc: 'como-comecar',
+    //   label: 'Aprenda programação'
+    // },
     {
       doc: 'sobre',
       label: 'Como funciona'
@@ -24,7 +30,6 @@ const siteConfig = {
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   onPageNav: 'separate',
-  cleanUrl: true,
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
   repoUrl: 'https://github.com/woliveiras/capacita.dev',
