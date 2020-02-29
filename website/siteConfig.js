@@ -35,7 +35,7 @@ const siteConfig = {
   repoUrl: 'https://github.com/woliveiras/capacita.dev',
   twitterUsername: '@etc_william',
   enableUpdateBy: true,
-  gaTrackingId: 'G-88SB0NW2XL'
+  gaTrackingId: 'UA-25964646-2'
 }
 
 module.exports = siteConfig
