@@ -1,5 +1,0 @@
-Dark Slate Blue: #5E2A85
-Rosy Brown: #B668AD
-White: #FBFBFB
-Light Steel Blue: #B49EC4
-Light Slate Gray #9484AD
