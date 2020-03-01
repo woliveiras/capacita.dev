@@ -41,6 +41,25 @@ a {
     max-width: 190px;
 }
 
+.highlight .button {
+    background: #5E2A85;
+    border-radius: 3px;
+    padding: 20px 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+
+.highlight .button:hover {
+    background: #20232a;
+    color: #fff;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

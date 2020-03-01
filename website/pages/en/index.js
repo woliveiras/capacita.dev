@@ -25,13 +25,18 @@ class HomeSplash extends React.Component {
       </div>
     )
 
-    const PromoSection = props => (
-      <div className='section promoSection'>
-        <div className='promoRow'>
-          <div className='pluginRowBlock'>{props.children}</div>
+    const PromoSection = props => {
+      const highlight = props.highlight ? 'highlight' : ''
+      const classes = `section promoSection ${highlight}`
+
+      return (
+        <div className={classes}>
+          <div className='promoRow'>
+            <div className='pluginRowBlock'>{props.children}</div>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
 
     const Button = props => (
       <div className='pluginWrapper buttonWrapper'>
@@ -45,7 +50,10 @@ class HomeSplash extends React.Component {
       <SplashContainer>
         <div className='inner'>
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <p>Em breve um projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
+          <p>Projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
+          {/* <PromoSection highlight>
+            <Button href='/grade'>Comece a estudar agora!</Button>
+          </PromoSection> */}
           <PromoSection>
             <Button href='/empresas'>Para empresas</Button>
             <Button href='/apoiar'>Como ajudar</Button>

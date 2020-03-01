@@ -8,10 +8,6 @@ const siteConfig = {
   projectName: 'Capacita.dev',
   organizationName: 'woliveiras',
   headerLinks: [
-    // {
-    //   doc: 'como-comecar',
-    //   label: 'Aprenda programação'
-    // },
     {
       doc: 'sobre',
       label: 'Como funciona'
