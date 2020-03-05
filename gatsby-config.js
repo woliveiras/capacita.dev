@@ -1,36 +1,58 @@
 module.exports = {
   siteMetadata: {
     title: 'Capacita.dev',
-    description: 'Aprenda programação online de graça através de desafios práticos',
+    description: 'Capacitação profissional em desenvolvimento de software para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social',
     author: '@etc_william'
   },
   plugins: [
-    'gatsby-theme-ui-blog',
-    'gatsby-plugin-theme-ui',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-mdx',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /img\/.*\.svg/,
+          omitKeys: ['xmlnsDc', 'xmlnsCc', 'xmlnsRdf', 'xmlnsSvg', 'xmlnsSodipodi', 'xmlnsInkscape']
+        }
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/static/images`
+        path: `${__dirname}/src/img`
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js')
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'capacita-dev',
+        short_name: 'Capacita',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/static/images/favicon/favicon-32x32.png'
+        icon: 'src/img/favicon-144x144.png'
       }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }

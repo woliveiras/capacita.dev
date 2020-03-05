@@ -1,60 +1,36 @@
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Img from 'gatsby-image'
+import styled from 'styled-components'
 
-const Header = ({ siteTitle }) => {
-  const image = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "favicon/favicon-96x96.png" }) {
-        childImageSharp {
-          fixed(width: 34) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
+import { Container } from './containers'
 
-  return (
-    <header
-      style={{
-        background: '#20232a',
-        marginBottom: '2rem'
-      }}
-    >
-      <div
+const Header = ({ siteTitle }) => (
+  <Wrapper>
+    <Container>
+      <Title>
+        <Link
+          to='/'
+          style={{
+            color: 'white',
+            textDecoration: 'none'
+          }}
+        >
+          {siteTitle}
+        </Link>
+      </Title>
+      <Link
+        to='/sobre'
         style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '.5rem',
-          display: 'flex',
-          alignItems: 'center'
+          color: 'white',
+          textDecoration: 'none'
         }}
       >
-        <h1 style={{ margin: 0, fontSize: '1.25em' }}>
-          <Link
-            to='/'
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-              display: 'flex',
-              alignItems: 'center'
-            }}
-          >
-            <Img
-              fixed={image.placeholderImage.childImageSharp.fixed}
-              style={{
-                marginRight: '10px'
-              }}
-            />
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
-    </header>
-  )
-}
+          Como funciona
+      </Link>
+    </Container>
+  </Wrapper>
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string
@@ -63,5 +39,16 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ''
 }
+
+const Wrapper = styled.header`
+  background: #340b65;
+  margin-bottom: 1rem;
+  border-bottom: 5px solid rgb(207, 166, 255);
+`
+
+const Title = styled.h1`
+  margin: 0;
+  padding: .5rem 0
+`
 
 export default Header
