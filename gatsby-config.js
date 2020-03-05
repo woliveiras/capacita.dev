@@ -7,10 +7,17 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js')
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -32,14 +39,6 @@ module.exports = {
       options: {
         name: 'pages',
         path: `${__dirname}/src/pages/`
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js')
-        }
       }
     },
     {
