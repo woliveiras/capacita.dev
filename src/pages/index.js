@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title='Página inicial' />
-      <div style={{ maxWidth: '320px', marginBottom: '1.45rem' }}>
+      <div style={{ maxWidth: '320px', margin: '0 auto' }}>
         <Logo style={{ maxWidth: '100%' }} />
       </div>
       <h2>Aprenda programação online de graça através de desafios práticos</h2>
