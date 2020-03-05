@@ -19,15 +19,18 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </Title>
-      <Link
-        to='/sobre'
-        style={{
-          color: 'white',
-          textDecoration: 'none'
-        }}
-      >
+      <LinkContainer>
+        <Link
+          to='/sobre'
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            borderBottom: '2px solid #cfa6fe'
+          }}
+        >
           Como funciona
-      </Link>
+        </Link>
+      </LinkContainer>
     </Container>
   </Wrapper>
 )
@@ -48,7 +51,11 @@ const Wrapper = styled.header`
 
 const Title = styled.h1`
   margin: 0;
-  padding: .5rem 0
+  padding: .5rem 0;
+`
+
+const LinkContainer = styled.div`
+  padding: 0.8rem 0;
 `
 
 export default Header
