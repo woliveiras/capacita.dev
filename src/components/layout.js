@@ -1,15 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import Header from './header'
+import Footer from './Footer'
 import { Container, Content } from './containers'
 
 const GlobalStyle = createGlobalStyle`
   body {
     font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  main {
+    flex: 1;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `
 
 const Layout = ({ children }) => {
@@ -24,19 +39,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Wrapper>
       <GlobalStyle theme='purple' />
       <Header siteTitle={data.site.siteMetadata.title} />
-
       <Container>
         <Content>
           <main>{children}</main>
-          <footer>
-          © {new Date().getFullYear()} - <a href='https://twitter.com/etc_william'>William Oliveira</a> , desenvolvido com  <a href='https://www.gatsbyjs.org'>Gatsby</a>
-          </footer>
         </Content>
       </Container>
-    </>
+      <Footer />
+    </Wrapper>
   )
 }
 

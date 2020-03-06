@@ -44,7 +44,7 @@ Header.defaultProps = {
 }
 
 const Wrapper = styled.header`
-  background: #340b65;
+  background: #1f2229;
   margin-bottom: 1rem;
   border-bottom: 5px solid rgb(207, 166, 255);
 `

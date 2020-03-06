@@ -7,13 +7,15 @@ import SEO from '../components/seo'
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout style={{ maxWidth: '600px' }}>
       <SEO title='Página inicial' />
-      <div style={{ maxWidth: '320px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '360px', margin: '0 auto' }}>
         <Logo style={{ maxWidth: '100%' }} />
       </div>
-      <h2>Aprenda programação online de graça através de desafios práticos</h2>
-      <p>Projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
+      <div style={{ maxWidth: '440px', margin: '0 auto', textAlign: 'center' }}>
+        <h2>Aprenda programação online de graça através de desafios práticos</h2>
+        <p>Projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
+      </div>
     </Layout>
   )
 }
