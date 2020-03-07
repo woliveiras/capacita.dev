@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     max-width: 620px;
     margin: 0 auto;
   }
+  li {
+    list-style: none;
+    padding: 5px
+  }
 `
 
 const Wrapper = styled.div`

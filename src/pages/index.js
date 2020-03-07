@@ -1,5 +1,6 @@
 import React from 'react'
 import 'normalize.css'
+
 import Logo from '../img/logo-capacita-dev.svg'
 
 import Layout from '../components/layout'
@@ -8,7 +9,7 @@ import SEO from '../components/seo'
 const IndexPage = () => {
   return (
     <Layout style={{ maxWidth: '600px' }}>
-      <SEO title='Página inicial' />
+      <SEO title='Aprenda programação' />
       <div style={{ maxWidth: '360px', margin: '0 auto' }}>
         <Logo style={{ maxWidth: '100%' }} />
       </div>
