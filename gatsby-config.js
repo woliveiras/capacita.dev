@@ -11,9 +11,18 @@ module.exports = {
     'gatsby-transformer-sharp',
     // `gatsby-plugin-offline`,
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'desafios',
+        path: `${__dirname}/src/pages/desafios/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-mdx',
       options: {
+        extensions: ['.mdx', '.md'],
         defaultLayouts: {
+          desafios: require.resolve('./src/components/challenges.js'),
           default: require.resolve('./src/components/layout.js')
         }
       }
