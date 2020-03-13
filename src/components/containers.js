@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1100px;
   padding: 0 1.45rem;
   display: flex;
+  flex: 1 0 auto;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;

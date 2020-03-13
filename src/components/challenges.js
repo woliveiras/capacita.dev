@@ -1,13 +1,30 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Challenges = (props) => {
-  const { title, wallpaper } = props.pageContext.frontmatter
+import Header from './header'
+import Footer from './Footer'
+import { Container, Content } from './containers'
+import { GlobalStyle } from './global-style'
+
+const Challenges = ({ title, children }) => {
   return (
-    <div style={{ border: '1px solid rebeccapurple' }}>
-      <h1>{title}</h1>
-      <p>{wallpaper}</p>
-    </div>
+    <Wrapper>
+      <GlobalStyle theme='purple' />
+      <Header />
+      <Container>
+        <Content>
+          <main>{children}</main>
+        </Content>
+      </Container>
+      <Footer />
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 export default Challenges
