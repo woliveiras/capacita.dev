@@ -1,5 +1,6 @@
 import React from 'react'
 import 'normalize.css'
+import { Link } from 'gatsby'
 
 import Logo from '../img/logo-capacita-dev.svg'
 
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <div style={{ maxWidth: '440px', margin: '0 auto', textAlign: 'center' }}>
         <h2>Aprenda programação online de graça através de desafios práticos</h2>
         <p>Projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
+        <Link to='/desafios/'>Desafios</Link>
       </div>
     </Layout>
   )
