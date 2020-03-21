@@ -3,18 +3,20 @@ import styled from 'styled-components'
 
 import Header from './header'
 import Footer from './Footer'
-import { Container, Content } from './containers'
+import { Container, TextContent } from './containers'
 import { GlobalStyle } from './global-style'
 
-const Challenges = ({ title, children }) => {
+const Challenges = ({ children, ...props }) => {
+  const { title, logo, date } = props.pageContext.frontmatter
+
   return (
     <Wrapper>
-      <GlobalStyle theme='purple' />
+      <GlobalStyle />
       <Header />
       <Container>
-        <Content>
+        <TextContent>
           <main>{children}</main>
-        </Content>
+        </TextContent>
       </Container>
       <Footer />
     </Wrapper>

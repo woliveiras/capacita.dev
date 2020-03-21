@@ -42,15 +42,17 @@ const Header = () => {
     }
 
     return (
-      <Link
-        to='/'
-        style={{
-          color: 'white',
-          textDecoration: 'none'
-        }}
-      >
-        {data.site.siteMetadata.title}
-      </Link>
+      <LinkContainer>
+        <Link
+          to='/'
+          style={{
+            color: 'white',
+            textDecoration: 'none'
+          }}
+        >
+          {data.site.siteMetadata.title}
+        </Link>
+      </LinkContainer>
     )
   }
 

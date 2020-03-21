@@ -2,11 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 960px;
   padding: 0 1.45rem;
   display: flex;
   flex: 1 0 auto;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
 
@@ -19,4 +18,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+`
+
+export const TextContent = styled(Content)`
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 `
