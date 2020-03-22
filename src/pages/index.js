@@ -15,7 +15,7 @@ const IndexPage = () => {
       <div style={{ maxWidth: '360px', margin: '0 auto' }}>
         <Logo style={{ maxWidth: '100%' }} />
       </div>
-      <div style={{ maxWidth: '620px', margin: '0 auto', textAlign: 'center' }}>
+      <div style={{ maxWidth: '620px', margin: '0 auto', textAlign: 'center', paddingBottom: '2rem' }}>
         <h2>Aprenda programação online de graça através de desafios práticos</h2>
         <p>Projeto educacional de capacitação profissional para pessoas de grupos sub-representados e/ou em situação de vulnerabilidade social</p>
         {/* <LinkWrapper to='/docs/primeiros-passos/'>Iniciantes</LinkWrapper>
