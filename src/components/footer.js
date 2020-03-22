@@ -45,6 +45,7 @@ const FooterWrapper = styled.footer`
     justify-content: center;
     padding: 1rem;
     flex-wrap: wrap;
+    min-height: 220px;
     max-height: 220px;
 
     a {

@@ -79,7 +79,7 @@ const Header = () => {
         {renderTitle(isHome)}
         <LinkContainer>
           <Link
-            to='/sobre'
+            to='/docs/sobre'
             style={{
               color: 'white',
               textDecoration: 'none',

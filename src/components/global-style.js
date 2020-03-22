@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
     }
     li {
-        list-style: none;
-        padding: 5px
+        padding: 5px;
     }
 `

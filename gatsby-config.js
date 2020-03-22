@@ -18,11 +18,19 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'docs',
+        path: `${__dirname}/src/pages/docs/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
           desafios: require.resolve('./src/components/challenges.js'),
+          docs: require.resolve('./src/components/challenges.js'),
           default: require.resolve('./src/components/layout.js')
         }
       }
