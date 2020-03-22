@@ -7,7 +7,7 @@ import Img from 'gatsby-image'
 import { Container } from './containers'
 
 const Header = () => {
-  const isHome = window.location.pathname === '/'
+  const isHome = typeof window !== 'undefined' && window.location.pathname === '/'
 
   const renderTitle = (isHome) => {
     if (isHome) {
