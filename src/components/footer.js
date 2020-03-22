@@ -26,8 +26,8 @@ const Footer = ({ siteTitle }) => {
         }}
       />
       <ul>
-        <li><a href='#'>Blog</a></li>
-        <li><a href='#'>GitHub</a></li>
+        <FooterListItem><a href='#'>Blog</a></FooterListItem>
+        <FooterListItem><a href='#'>GitHub</a></FooterListItem>
       </ul>
       <span style={{ width: '100%', textAlign: 'center' }}>
         © {new Date().getFullYear()} - <a href='https://twitter.com/etc_william'>William Oliveira</a> , desenvolvido com  <a href='https://www.gatsbyjs.org'>Gatsby</a>
@@ -51,6 +51,10 @@ const FooterWrapper = styled.footer`
     a {
         color: white
     }
+`
+
+const FooterListItem = styled.li`
+  list-style: none
 `
 
 export default Footer
