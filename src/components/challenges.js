@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Header from './header'
-import Footer from './Footer'
+import Footer from './footer'
 import { Container, TextContent } from './containers'
 import { GlobalStyle } from './global-style'
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Header from './header'
-import Footer from './Footer'
+import Footer from './footer'
 import { Container, Content } from './containers'
 import { GlobalStyle } from './global-style'
 
