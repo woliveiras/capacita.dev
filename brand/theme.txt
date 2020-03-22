@@ -1,3 +1,4 @@
+Dark Steel: #20232a
 Dark Slate Blue: #5E2A85
 Rosy Brown: #B668AD
 White: #FBFBFB
